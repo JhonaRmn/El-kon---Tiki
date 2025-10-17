@@ -1,0 +1,114 @@
+body {
+font-family: cursive;
+margin: 0;
+padding: 0;
+color: #023047;
+background: linear-gradient(to bottom right, #a8dadc, #f1faee);
+background-attachment: fixed;
+line-height: 1.6;
+}
+
+
+header {
+background: linear-gradient(to right, #0077b6, #00b4d8);
+color: #ffffff;
+text-align: center;
+padding: 2em 0;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+header h1 {
+font-size: 2.5em;
+margin: 0;
+letter-spacing: 1px;
+}
+
+nav ul li {
+display: inline-block;
+margin: 0 15px;
+}
+
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+font-weight: 600;
+font-size: 1.1em;
+padding: 8px 15px;
+border-radius: 8px;
+transition: background-color 0.3s, transform 0.3s;
+}
+
+
+nav ul li a:hover {
+background-color: rgba(255, 255, 255, 0.2);
+transform: scale(1.05);
+}
+
+
+/* ===== Contenido ===== */
+main {
+text-align: center;
+padding: 3em 1.5em;
+}
+
+
+h2 {
+color: #1d3557;
+}
+
+
+p {
+max-width: 900px;
+margin: 0 auto;
+font-size: 1.1em;
+color: #073b4c;
+}
+
+
+/* ===== Imágenes ===== */
+.main-img, .content-img {
+width: 80%;
+max-width: 700px;
+border-radius: 15px;
+margin: 25px 0;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.main-img:hover, .content-img:hover {
+transform: scale(1.03);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ===== Pie de página ===== */
+footer {
+background-color: #0077b6;
+color: #f1faee;
+text-align: center;
+padding: 1.5em 0;
+margin-top: 40px;
+font-size: 0.95em;
+letter-spacing: 0.5px;
+}
+
+
+footer p {
+
+text-align: center;
+}
+
+
+/* ===== Animaciones suaves ===== */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+
+main, header, footer {
+animation: fadeIn 1.2s ease-out;
+}
